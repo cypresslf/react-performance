@@ -31,6 +31,8 @@ function App() {
           type="checkbox"
           checked={showGlobe}
           onChange={e => setShowGlobe(e.target.checked)}
+          onMouseOver={() => import('../globe')}
+          onFocus={() => import('../globe')}
         />
         {' show globe'}
       </label>
